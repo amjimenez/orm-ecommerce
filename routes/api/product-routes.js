@@ -9,6 +9,7 @@ router.get('/', (req, res) => {
     let promise = Product.findAll({
         include: {
             all: true,
+            nexted
         },
     })
     response(promise, res)
@@ -107,6 +108,8 @@ router.delete('/:id', (req, res) => {
             id: req.params.id,
         },
     })
+
+    res.status(200).json()
 });
 
 module.exports = router;
