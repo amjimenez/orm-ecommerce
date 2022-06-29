@@ -50,6 +50,7 @@ DB_NAME=ecommerce_db
 ## Walkthrough Video Links
 ```
 https://www.kapwing.com/videos/62bcc6b51e1a6400de101484
+```
 https://www.kapwing.com/videos/62bccac99967d800689cf2ea
 ```
 ## Github Link
