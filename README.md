@@ -48,6 +48,7 @@ DB_NAME=ecommerce_db
   - node server.js
   
 ```
+```
 ## Walkthrough Video Links
 ```
 https://www.kapwing.com/videos/62bcc6b51e1a6400de101484
