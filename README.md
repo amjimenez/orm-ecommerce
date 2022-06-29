@@ -46,6 +46,7 @@ DB_NAME=ecommerce_db
   - npm install
 - Run app
   - node server.js
+  
 ```
 ## Walkthrough Video Links
 ```
