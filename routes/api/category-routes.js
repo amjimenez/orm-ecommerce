@@ -66,8 +66,13 @@ router.delete('/:id', (req, res) => {
             id: req.params.id,
         },
     })
-
-    res.status(200).json()
-});
+    .then((data) => {
+        res.status(200).json({id: req.params.id, "deleted": true})
+    })
+    .catch((err) => {
+        // console.log(err);
+        res.status(400).json(err);
+    })
+})
 
 module.exports = router;

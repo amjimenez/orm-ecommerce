@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Tag, Product, ProductTag, Category} = require('../../models');
+const { Tag } = require('../../models');
 const response = require("../../http/response");
 
 // The `/api/tags` endpoint
 
 router.get('/', (req, res) => {
-    let promise = ProductTag.findAll({
+    let promise = Tag.findAll({
         include: {
             all: true,
             nested: true,
@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/:id', (req, res) => {
-    let promise = ProductTag.findOne({
+    let promise = Tag.findOne({
         where: {
             id: req.params.id,
         },
@@ -67,8 +67,13 @@ router.delete('/:id', (req, res) => {
             id: req.params.id,
         },
     })
-
-    res.status(200).json()
+    .then((data) => {
+        res.status(200).json({id: req.params.id, "deleted": true})
+    })
+    .catch((err) => {
+        // console.log(err);
+        res.status(400).json(err);
+    })
 });
 
 module.exports = router;

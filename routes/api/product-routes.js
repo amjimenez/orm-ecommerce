@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     let promise = Product.findAll({
         include: {
             all: true,
-            nexted
+            nested: true,
         },
     })
     response(promise, res)
@@ -23,6 +23,7 @@ router.get('/:id', (req, res) => {
         },
         include: {
             all: true,
+            nested: true,
         },
     })
     response(promise, res)
@@ -35,6 +36,7 @@ router.post('/', (req, res) => {
         product_name: "Basketball",
         price: 200.00,
         stock: 3,
+        category_id: 1,
         tagIds: [1, 2, 3, 4]
       }
     */
@@ -108,8 +110,13 @@ router.delete('/:id', (req, res) => {
             id: req.params.id,
         },
     })
-
-    res.status(200).json()
+    .then((data) => {
+        res.status(200).json({id: req.params.id, "deleted": true})
+    })
+    .catch((err) => {
+        // console.log(err);
+        res.status(400).json(err);
+    })
 });
 
 module.exports = router;
