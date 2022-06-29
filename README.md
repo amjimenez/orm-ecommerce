@@ -47,4 +47,9 @@ DB_NAME=ecommerce_db
 - Run app
   - node server.js
 ```
-
+## Walkthrough Video
+The link to the [Video(s)](https://www.kapwing.com/videos/62bcc6b51e1a6400de101484)(https://www.kapwing.com/videos/62bcc6b51e1a6400de101484):
+```
+https://www.kapwing.com/videos/62bcc6b51e1a6400de101484
+https://www.kapwing.com/videos/62bcc6b51e1a6400de101484
+```
