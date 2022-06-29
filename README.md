@@ -48,7 +48,8 @@ DB_NAME=ecommerce_db
   - node server.js
 ```
 ## Walkthrough Video
-The link to the [Video](https://www.kapwing.com/videos/62bcc6b51e1a6400de101484):
+<div style="height: 0; padding-bottom: calc(79.94%); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/62bcc6b51e1a6400de101484" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing" width="100%"></iframe></div><p style="font-size: 12px; text-align: right;">Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
+
 ```
 https://www.kapwing.com/videos/62bcc6b51e1a6400de101484
 ```
